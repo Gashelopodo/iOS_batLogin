@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DetalleTareaTableViewCell" rowHeight="330" id="KGk-i7-Jjw" customClass="BLDetalleTareaTableViewCell" customModule="App_BatLogin" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="330"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="329"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Miranda_Lambert.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="4df-RT-uu6"/>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondodegradado.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qsy-dZ-cGr">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="142" id="5W5-gA-IKx"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eo7-wn-34l">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="125" id="9wM-eQ-EvW"/>
+                        </constraints>
+                        <string key="text">jkdsflkafjlkads fdslakjf sdlak fjsalkfj sdaklfj salk fjsalk fjsalk fjaslkfjsalkfjsadlkfjsalkfjaslkfjsadlkfjsalkfjaslkfjaslkfjsalkfjsalkfjsdalkfjsaklf</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.99990183115005493" green="1" blue="0.99987989664077759" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_no_icon" translatesAutoresizingMaskIntoConstraints="NO" id="7og-HJ-pT8">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="46" id="7Bl-O2-zvs"/>
+                            <constraint firstAttribute="width" constant="50" id="eqG-Mn-5Cf"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7og-HJ-pT8" secondAttribute="bottom" constant="7.5" id="5a1-In-D2d"/>
+                    <constraint firstItem="eo7-wn-34l" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="7eW-Tc-KKF"/>
+                    <constraint firstAttribute="bottom" secondItem="eo7-wn-34l" secondAttribute="bottom" constant="7.5" id="Ov0-3x-Kol"/>
+                    <constraint firstAttribute="trailing" secondItem="4df-RT-uu6" secondAttribute="trailing" id="TCH-yf-ZrW"/>
+                    <constraint firstItem="4df-RT-uu6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZQV-Dj-KbE"/>
+                    <constraint firstAttribute="bottom" secondItem="4df-RT-uu6" secondAttribute="bottom" constant="-0.5" id="cMJ-IX-WiU"/>
+                    <constraint firstAttribute="trailing" secondItem="Qsy-dZ-cGr" secondAttribute="trailing" id="csy-R6-OrI"/>
+                    <constraint firstItem="4df-RT-uu6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="dJB-Z3-PPs"/>
+                    <constraint firstAttribute="trailing" secondItem="7og-HJ-pT8" secondAttribute="trailing" constant="4" id="fsv-0E-cJi"/>
+                    <constraint firstItem="Qsy-dZ-cGr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hVL-3C-NPK"/>
+                    <constraint firstAttribute="bottom" secondItem="Qsy-dZ-cGr" secondAttribute="bottom" id="q0w-kD-4LI"/>
+                    <constraint firstItem="7og-HJ-pT8" firstAttribute="leading" secondItem="eo7-wn-34l" secondAttribute="trailing" constant="6" id="tfs-UP-qir"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="myDescripcionTarea" destination="eo7-wn-34l" id="kAw-xb-fxl"/>
+                <outlet property="myIconoTarea" destination="7og-HJ-pT8" id="iNq-9s-jVa"/>
+                <outlet property="myImagenTarea" destination="4df-RT-uu6" id="bbU-Fk-DBe"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="239"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Miranda_Lambert.jpg" width="1800" height="1365"/>
+        <image name="fondodegradado.png" width="726" height="443"/>
+        <image name="img_no_icon" width="50" height="50"/>
+    </resources>
+</document>
